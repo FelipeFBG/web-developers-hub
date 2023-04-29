@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  padding: 30px 100px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+nav ul li a {
+  color: #1d1d24;
+  position: relative;
+  padding: 5px 0;
+}
+
+nav ul li a:hover {
+  color: cornflowerblue;
+}
+
+nav ul li a:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: cornflowerblue;
+  transition: .5s;
+  bottom: 0;
+}
+
+nav ul li a:hover:after {
+  width: 100%;
+}
+
+
+.cards{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card {
+  width: 300px;
+  height: 450px;
+  background: #fff;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 15px 25px 10px rgba(0, 0, 0, 1);
+}
+
+.card:hover .conteudo .informacoes h2{
+    color: cornflowerblue;
+    transition: .6s;
+  }
+  
+.img-eu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  overflow: hidden;
+  transform: translateY(30px) scale(0.5);
+  transform-origin: top;
+}
+  
+.img-eu img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+  
+.conteudo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 30px;
+}
+  
+.conteudo .informacoes {
+  text-align: center;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+  
+.conteudo .informacoes h2 {
+  color: #383838;
+  font-size: 24px;
+  margin-bottom: 10%;
+}
+  
+.insta, .github, .linkedin, .twitter{
+  width: 45px;
+  border-radius: 15px;
+}
+
+.insta:hover, .github:hover, .linkedin:hover, .twitter:hover{
+  opacity: 0.5;
+  transition: .4s;
+  transform: rotate(20deg);
+  cursor: pointer;
+}
+
+p{
+    width: 58%;
+    margin-left: 38%;
+    margin-top: -35%;
+    color: #1f1f25;
+    font-size: 26px;
+    line-height: 60px;
+}
+
+strong{
+    color: cornflowerblue;
+    font-size: 26px;
+  }
+
+  h1{
+    color: #1f1f25;
+    font-size: 40px;
+    margin-top: -2%;
+    margin-bottom: 2%;
+    
+    text-align: center;
+  }
+  
